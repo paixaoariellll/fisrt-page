@@ -5,9 +5,11 @@ $siteOwnersEmail = 'paixaoariellll@gmail.com';
 if($_POST) {
 
    $name = trim(stripslashes($_POST['contactName']));
-   $email = trim(stripslashes($_POST['contactEmail']));
-   $subject = trim(stripslashes($_POST['contactSubject']));
+   $email = trim(stripslashes($_POST['contactEmail'])); 
+
    $contact_message = trim(stripslashes($_POST['contactMessage']));
+   $data_envio = date('d/m/Y');
+   $hora_envio = date('H:i:s');
 
    // Check Name
 	if (strlen($name) < 2) {
@@ -21,10 +23,16 @@ if($_POST) {
 	if (strlen($contact_message) < 15) {
 		$error['message'] = "Por favor, digite sua mensagem. Ela deve conter pelo menos 15 caracteres.";
 	}
-   // Subject
-	if ($subject == '') { $subject = "Contact Form Submission"; }
 
-	
+
+	$arquivo = "
+    	<html>
+    	  <p><b>Nome: </b>$nome</p>
+      	  <p><b>E-mail: </b>$email</p>
+     	  <p><b>Mensagem: </b>$mensagem</p>
+     	  <p>Este e-mail foi enviado em <b>$data_envio</b> às <b>$hora_envio</b></p>
+  		</html>
+  	";
    // Set Message
     $message .= "Email from: " . $name . "<br />";
 	$message .= "Email address: " . $email . "<br />";
@@ -45,7 +53,7 @@ if($_POST) {
    if (!$error) {
 
       ini_set("sendmail_from", $siteOwnersEmail); // for windows server
-      $mail = mail($siteOwnersEmail, $subject, $message, $headers);
+      $mail = mail($siteOwnersEmail, $message, $headers);
 
 		if ($mail) { echo "OK"; }
       else { echo "Aconteceu algo de errado. Por favor, tente novamente, ou entre em contato diretamente pelos icones abaixo."; }

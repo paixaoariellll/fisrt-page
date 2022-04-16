@@ -254,7 +254,7 @@
 				error: function () {
 
 					sLoader.fadeOut();
-					$('#message-warning').html("Ah, que pena, parece que ocorreu um erro. Por favor, tente novamente.");
+					$('#message-warning').html("Ocorreu um erro. Por favor, tente novamente.");
 					$('#message-warning').fadeIn();
 
 				}
@@ -266,7 +266,7 @@
 
 	/*----------------------------------------------------- */
 	/* Back to top
-------------------------------------------------------- */
+	------------------------------------------------------- */
 	var pxShow = 300; // height on which the button will show
 	var fadeInTime = 400; // how slow/fast you want the button to show
 	var fadeOutTime = 400; // how slow/fast you want the button to hide
