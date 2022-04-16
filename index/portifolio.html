@@ -952,25 +952,24 @@
 				<div class="col-twelve">
 
 					<!-- form -->
-					<form name="contactForm" id="contactForm" method="post" action="">
+					<form name="contactForm" id="contactForm" method="POST" action="../index/inc/enviar-email.php">
 						<fieldset>
 
 							<div class="form-field">
-								<input name="contactName" type="text" id="contactName" placeholder="Nome" value=""
-									minlength="2" required="">
+								<input name="nome" type="text" id="inputNome" placeholder="Nome" required maxlength="30"
+									minlength="2">
 							</div>
+
 							<div class="form-field">
-								<input name="contactEmail" type="email" id="contactEmail" placeholder="E-mail" value=""
-									required="">
+								<input name="email" type="email" id="inputEmail" required maxlength="50"
+									placeholder="E-mail">
 							</div>
+
 							<div class="form-field">
-								<input name="contactSubject" type="text" id="contactSubject" placeholder="Título"
-									value="">
+								<textarea name="mensagem" id="textAreaMessage" required placeholder="mensagem de texto"
+									minlength="5"></textarea>
 							</div>
-							<div class="form-field">
-								<textarea name="contactMessage" id="contactMessage" placeholder="mensagem de texto"
-									rows="10" cols="50" required=""></textarea>
-							</div>
+
 							<div class="form-field">
 								<button class="submitform">Enviar</button>
 								<div id="submit-loader">
@@ -988,6 +987,7 @@
 
 					<!-- contact-warning -->
 					<div id="message-warning">
+						<i class="fa fa-check"></i>Aconteceu algum problema, tente novamente!<br>
 					</div>
 					<!-- contact-success -->
 					<div id="message-success">

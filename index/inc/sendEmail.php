@@ -15,11 +15,11 @@ if($_POST) {
 	}
 	// Check Email
 	if (!preg_match('/^[a-z0-9&\'\.\-_\+]+@[a-z0-9\-]+\.([a-z0-9\-]+\.)*+[a-z]{2}/is', $email)) {
-		$error['email'] = "Por favor, digite seu endereço de email. ";
+		$error['email'] = "Exemplo: nome@mail.com";
 	}
 	// Check Message
 	if (strlen($contact_message) < 15) {
-		$error['message'] = "Por favor, digite sua mensagem. Deve conter pelo menos 15 caracteres.";
+		$error['message'] = "Por favor, digite sua mensagem. Ela deve conter pelo menos 15 caracteres.";
 	}
    // Subject
 	if ($subject == '') { $subject = "Contact Form Submission"; }
@@ -48,7 +48,7 @@ if($_POST) {
       $mail = mail($siteOwnersEmail, $subject, $message, $headers);
 
 		if ($mail) { echo "OK"; }
-      else { echo "Aconteceu algo de errado. Por favor, tente novamente, ou entre em contato diretamente pelos icones."; }
+      else { echo "Aconteceu algo de errado. Por favor, tente novamente, ou entre em contato diretamente pelos icones abaixo."; }
 		
 	} # end if - no validation error
 
