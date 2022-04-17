@@ -13,13 +13,14 @@
  *  09. header styles
  *  10. intro
  *  11. about
- *  12. resume
- *  13. portfolio
- *  14. call-to-action section
- *  15. services
- *  16. stats
- *  17. contact
- *  18. footer
+ *  12. cards
+ *  13. resume
+ *  14. portfolio
+ *  15. call-to-action section
+ *  16. services
+ *  17. stats
+ *  18. contact
+ *  19. footer
  *
  * =================================================================== 
  */
@@ -1745,7 +1746,61 @@ header .logo a {
 
 /** 
  * ===================================================================
- * 12. resume - (_layout.scss)
+ * 12. cards - those cards are in linguagens / cards.html 
+ *
+ * ------------------------------------------------------------------- 
+*/
+button {
+  top:0;
+  left:0;
+  position: relative;
+  display: block;
+  font-size: 24px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  border:rgb(30, 182, 202);
+  transition: color 7s ease;
+  transition-property: color, background-color, transform;
+  cursor: pointer;
+  z-index: 1;
+ 
+ }
+ 
+ button:hover {
+  color: rgb(15, 210, 221);
+ }
+ 
+ button:hover:before {
+  width: 100%;
+  height: 100%;
+  top: auto;
+  bottom: 0;
+ }
+ 
+ button:active {
+  transform: translateY(4px)
+ }
+ 
+ button:before {
+  content: '';
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  height: 0%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: rgb(4, 175, 218);
+  transition: height 0.3s ease;
+ }
+
+/** 
+ * ===================================================================
+ * 13. resume - (_layout.scss)
  *
  * ------------------------------------------------------------------- 
 */
@@ -1911,7 +1966,7 @@ header .logo a {
 
 /** 
  * ===================================================================
- * 13. portfolio - (_layout.scss)
+ * 14. portfolio - (_layout.scss)
  *
  * ------------------------------------------------------------------- 
  */
@@ -2148,7 +2203,7 @@ header .logo a {
 
 /** 
  * ===================================================================
- * 14. call-to-action section - (_layout.scss)
+ * 15. call-to-action section - (_layout.scss)
  *
  * ------------------------------------------------------------------- 
  */
@@ -2217,7 +2272,7 @@ header .logo a {
 
 /** 
  * ===================================================================
- * 15. services - (_layout.scss)
+ * 16. services - (_layout.scss)
  *
  * ------------------------------------------------------------------- 
  */
@@ -2303,7 +2358,7 @@ header .logo a {
 
 /** 
  * ===================================================================
- * 16. stats - (_layout.scss)
+ * 17. stats - (_layout.scss)
  *
  * ------------------------------------------------------------------- 
  */
@@ -2369,7 +2424,7 @@ header .logo a {
 
 /** 
  * ===================================================================
- * 17. contact - (_layout.scss)
+ * 18. contact - (_layout.scss)
  *
  * ------------------------------------------------------------------- 
  */
@@ -2617,7 +2672,7 @@ header .logo a {
 
 /** 
  * ===================================================================
- * 18. footer - (_layout.scss)
+ * 19. footer - (_layout.scss)
  *
  * ------------------------------------------------------------------- 
  */
