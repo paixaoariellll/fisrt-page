@@ -22,11 +22,10 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-header h2 .logo {
-  color: rgb(200, 34, 34);
-  text-transform: capitalize;
-  cursor: pointer;
+header h2, header h4{
+  pointer-events: none;
   text-align: center;
+  color:black
 }
 .toggle {
   position: relative;
@@ -77,19 +76,14 @@ header h2 .logo {
   position: relative;
   z-index: 10;
 }
-.text h2 {
-  font-size: 5em;
-  font-weight: 800;
-  color: #fff;
-  line-height: 1em;
-  text-transform: uppercase;
-}
+
 .text h3 {
   font-size: 4em;
   font-weight: 700;
   color: #fff;
   line-height: 1em;
   text-transform: uppercase;
+  pointer-events: none;
 }
 .text p {
   font-size: 1.1em;
@@ -97,6 +91,7 @@ header h2 .logo {
   margin: 20px 0;
   font-weight: 400;
   max-width: 700px;
+  pointer-events: none;
 }
 .text a {
   display: inline-block;
@@ -123,6 +118,7 @@ header h2 .logo {
   align-items: center;
 }
 .social li {
+  justify-content: space-around;
   list-style: none;
 }
 .social li a {
@@ -167,9 +163,29 @@ header h2 .logo {
     padding: 40px;
   }
   .text h2 {
+    font-size: 5em;
+  }
+  .text h4 {
     font-size: 3em;
   }
-  .text h3 {
+}
+@media (max-width: 622px) {
+  header h2{
+    display:none;
+  } 
+  header h4{
+    text-align: center;
+    color:rgb(250, 250, 250) !important;
     font-size: 2em;
+  }
+  .showcase,
+  .showcase header {
+    padding: 40px;
+  }
+  .text h2 {
+    font-size: 3em;
+  }
+  .text h4 {
+    font-size: 1em;
   }
 }
