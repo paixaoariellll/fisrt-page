@@ -57,6 +57,7 @@ header h2, header h4{
   transition: 1.5s;
   z-index: 2;
   background-attachment: fixed;
+  background-position: center;
 }
 .showcase.active {
   right: 300px;
@@ -170,22 +171,32 @@ header h2, header h4{
   }
 }
 @media (max-width: 622px) {
+  .toggle.active{
+    transform: translate( 30px, -20px);
+  }
   header h2{
     display:none;
   } 
   header h4{
     text-align: center;
-    color:rgb(250, 250, 250) !important;
+    color:#fff !important;
     font-size: 2em;
   }
   .showcase,
   .showcase header {
     padding: 40px;
   }
-  .text h2 {
-    font-size: 3em;
+  .text h3{
+    font-size: 2em;
+    color: #000 !important; 
+    transform: translateY(-120px) translateX(-25px);
+    transition: 20s;
   }
-  .text h4 {
-    font-size: 1em;
+  .text p {
+    display: none;
+  }
+  .text a {
+    transition: 20s;
+    transform: translateY(100px);
   }
 }
