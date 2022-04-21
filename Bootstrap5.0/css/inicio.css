@@ -219,7 +219,7 @@ header h2, header h4{
 @media (max-width: 622px) {
   .text-end{
     text-align: initial !important;
-    left: 20%;
+    left: 10%;
   }
   .social{
     display: flex;
