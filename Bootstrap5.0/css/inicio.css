@@ -57,6 +57,7 @@ header h2 .logo {
   background: #111;
   transition: 1.5s;
   z-index: 2;
+  background-attachment: fixed;
 }
 .showcase.active {
   right: 300px;
@@ -143,6 +144,7 @@ header h2 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-attachment: fixed;
 }
 .menu ul {
   position: relative;
