@@ -251,14 +251,14 @@ header h2, header h4{
   .text h3{
     font-size: 2em;
     transform: translateY(-190px) translateX(-25px);
-    transition: 20s;
+    transition: 10s;
   }
   .text p {
     display: none;
   }
   .text a {
-    transition: 20s;
-    transform: translateY(150px);
+    transition: 5s;
+    transform:translateX(50px) translateY(150px);
   }
   .text .social{
     transform: translateY(-200px);
