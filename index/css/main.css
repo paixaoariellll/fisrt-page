@@ -179,7 +179,7 @@ p.lead {
   font-family: "Poppins", serif;
   font-size: 3rem;
   line-height: 1.8;
-  color: #8888f7;
+  color: #0000ff;
 }
 @media only screen and (max-width: 768px) {
   p.lead {
@@ -1146,7 +1146,7 @@ input::-moz-focus-inner {
 .section-intro h1 {
   font-family: "poppins-semibold", serif;
   font-size: 4rem;
-  color: #313131;
+  color: #fff;
   line-height: 1.25;
   margin-bottom: 1.2rem;
 }
@@ -1602,7 +1602,7 @@ header .logo a {
  */
 #about {
   background: #ffffff;
-  padding-top: 12rem;
+  padding-top: 5rem;
   padding-bottom: 15rem;
 }
 #about .section-intro {
@@ -1698,8 +1698,8 @@ header .logo a {
 }
 @media only screen and (max-width: 768px) {
   .intro-info img {
-    height: 7.8rem;
-    width: 7.8rem;
+    height: 18rem;
+    width: 18rem;
   }
   .intro-info .lead {
     padding-left: 11rem;
@@ -1720,10 +1720,16 @@ header .logo a {
   }
 }
 @media only screen and (max-width: 600px) {
+  .col-twelve{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .col-twelve h5{
+    font-size: 24px;
+  }
   .intro-info {
     text-align: center;
-    margin-top: 5rem;
-    margin-left: 0;
   }
   .intro-info img {
     height: 16rem;
@@ -1733,8 +1739,8 @@ header .logo a {
     float: left;
 }
   .intro-info img {
-    height: 6.6rem;
-    width: 6.6rem;
+    height: 20rem;
+    width: 20rem;
     float: none;
     display: inline-block;
   }
@@ -1811,7 +1817,9 @@ button {
 #resume .resume-header h2 {
   color: #ff0077;
 }
-
+#resume .timeline-header h3 {
+  color: #fff;
+}
 #resume .resume-timeline {
   max-width: 980px;
 }
@@ -1874,6 +1882,7 @@ button {
 #resume .timeline-content h4 {
   position: relative;
   padding-bottom: 1.8rem;
+  color:#fff;
 }
 #resume .timeline-content h4::after {
   content: "";
