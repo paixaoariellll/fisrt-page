@@ -44,6 +44,7 @@ header h2, header h4{
   background-position: center;
   cursor: pointer;
 }
+
 .showcase {
   position: absolute;
   right: 0;
@@ -63,6 +64,20 @@ header h2, header h4{
   right: 300px;
 }
 
+.showcase .background{
+  position: absolute;
+  display: none;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: 90% 50%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
 .showcase video {
   position: absolute;
   top: 0;
@@ -110,28 +125,33 @@ header h2, header h4{
 .text a:hover {
   letter-spacing: 6px;
 }
+
 .social {
+  left: 20px;
+  width: 50%;
   position: absolute;
   z-index: 10;
   bottom: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .social li {
   justify-content: space-around;
   list-style: none;
+  display: flex;
 }
-.social li a {
+.socialground {
   display: inline-block;
   margin-right: 20px;
   filter: invert(1);
   transform: scale(0.5);
   transition: 0.5s;
 }
-.social li a:hover {
+.socialground:hover {
   transform: scale(0.5) translateY(-15px);
-}
+} 
+
 .menu {
   position: absolute;
   top: 0;
@@ -159,6 +179,20 @@ header h2, header h4{
 }
 
 @media (max-width: 991px) {
+  .social{
+    width: 40%;
+  }
+  header {
+    text-align: center;
+    color:#fff !important;
+    font-size: 2em;
+  }
+  .showcase video{
+    display: none;
+  }
+  .showcase .background {
+    display: flex;
+  }
   .showcase,
   .showcase header {
     padding: 40px;
@@ -171,6 +205,12 @@ header h2, header h4{
   }
 }
 @media (max-width: 622px) {
+  .social{
+    display: flex;
+    left: 30%;
+    flex-direction: column;
+    padding: 10px;
+  }
   .toggle.active{
     transform: translate( 30px, -20px);
   }
@@ -180,7 +220,13 @@ header h2, header h4{
   header h4{
     text-align: center;
     color:#fff !important;
-    font-size: 2em;
+    font-size: 1em;
+  }
+  .showcase video{
+    display: none;
+  }
+  .showcase .background {
+    display: flex;
   }
   .showcase,
   .showcase header {
@@ -188,8 +234,7 @@ header h2, header h4{
   }
   .text h3{
     font-size: 2em;
-    color: #000 !important; 
-    transform: translateY(-120px) translateX(-25px);
+    transform: translateY(-190px) translateX(-25px);
     transition: 20s;
   }
   .text p {
@@ -197,6 +242,9 @@ header h2, header h4{
   }
   .text a {
     transition: 20s;
-    transform: translateY(100px);
+    transform: translateY(150px);
+  }
+  .text .social{
+    transform: translateY(-200px);
   }
 }
