@@ -25,7 +25,7 @@ header {
 header h2, header h4{
   pointer-events: none;
   text-align: center;
-  color:black
+  color:#fff;
 }
 .toggle {
   position: relative;
@@ -184,7 +184,7 @@ header h2, header h4{
   }
   header {
     text-align: center;
-    color:#fff !important;
+    color:#fff;
     font-size: 2em;
   }
   .showcase video{
@@ -219,7 +219,7 @@ header h2, header h4{
   } 
   header h4{
     text-align: center;
-    color:#fff !important;
+    color:#fff;
     font-size: 1em;
   }
   .showcase video{
