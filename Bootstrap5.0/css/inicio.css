@@ -11,6 +11,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+header .small{
+  display: none;
+}
 header {
   position: absolute;
   top: 0;
@@ -90,8 +93,11 @@ header h2, header h4{
 
 .text {
   position: relative;
+  display: block;
+  padding: 0;
   z-index: 10;
-  left:70%;
+  left: 180%;
+  top: -100px;
 }
 
 .text h3 {
@@ -180,6 +186,62 @@ header h2, header h4{
   color: #03a9f4;
 }
 
+@media (max-width: 1550px) {
+  .text {
+    position: relative;
+    display: block;
+    padding: 0;
+    z-index: 10;
+    left: 150%;
+    top: -100px;
+    transition: 2s;
+  }
+}
+@media (max-width: 1380px) {
+  .text {
+    position: relative;
+    display: block;
+    padding: 0;
+    z-index: 10;
+    left: 130%;
+    top: -100px;
+    transition: 2s;
+  }
+}
+
+@media (max-width: 1280px) {
+  .text {
+    position: relative;
+    display: block;
+    padding: 0;
+    z-index: 10;
+    left: 110%;
+    top: -100px;
+    transition: 2s;
+  }
+}
+@media (max-width: 1170px) {
+  .text {
+    position: relative;
+    display: block;
+    padding: 0;
+    z-index: 10;
+    left: 90%;
+    top: -100px;
+    transition: 2s;
+  }
+}
+@media (max-width: 1070px) {
+  .text {
+    position: relative;
+    display: block;
+    padding: 0;
+    z-index: 10;
+    left: 70%;
+    top: -100px;
+    transition: 2s;
+  }
+}
 @media (max-width: 991px) {
   .text-end{
     text-align: center !important;
@@ -262,5 +324,64 @@ header h2, header h4{
   }
   .text .social{
     transform: translateY(-200px);
+  }
+}
+@media (max-width: 400px) {
+  .text-end{
+    text-align: initial !important;
+    left: 10%;
+  }
+  .social{
+    display: flex;
+    left: 30%;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .toggle.active{
+    transform: translate( 30px, -20px);
+  }
+  header h2{
+    display:none;
+  } 
+  header h4{
+    text-align: center;
+    color:#fff;
+    font-size: 1em;
+  }
+  header .big{
+    display: none;
+  }
+  header .small{
+    display: flex;
+    text-align: center;
+  }
+  .showcase video{
+    display: none;
+  }
+  .showcase .background {
+    display: flex;
+  }
+  .showcase h3{
+    color: green !important;
+  }
+  .showcase,
+  .showcase header {
+    padding: 40px;
+  }
+  .text h3{
+    font-size: 2em;
+    transform: translateY(-190px) translateX(-25px);
+    transition: 10s;
+  }
+  .text p {
+    display: none;
+  }
+  .text a {
+    transition: 5s;
+    transform:translateX(30px) translateY(250px);
+    
+  }
+  .text .social{
+    transform: translateY(-200px) ;
   }
 }

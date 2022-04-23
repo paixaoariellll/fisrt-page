@@ -1981,7 +1981,7 @@ button {
  */
 #portfolio {
   background: #ffffff;
-  padding-top: 12rem;
+  padding-top: 5rem;
   padding-bottom: 12rem;
 }
 #portfolio .folio-item {
@@ -1990,12 +1990,22 @@ button {
   overflow: hidden;
 }
 #portfolio .folio-item img {
+  display: flex;
+  position: relative;
+  transform: scale(0.5);
+  background-position: center;
+  background-attachment: fixed;
   vertical-align: middle;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -moz-transition: all 5s ease-in-out;
+  -o-transition: all 5s ease-in-out;
+  -webkit-transition: all 5s ease-in-out;
+  -ms-transition: all 5s ease-in-out;
+  transition: all 5s ease-in-out;
+}
+#portifolio .folio-text{
+   text-align: center;
+   display: flex;
+   top: 50%;
 }
 
 #portfolio .overlay {
@@ -2046,15 +2056,15 @@ button {
   color: rgba(255, 255, 255, 0.6);
 }
 #portfolio .folio-item:hover .overlay {
-  background: rgba(0, 0, 0, 0.8);
+  background: transparent;
 }
 #portfolio .folio-item:hover .folio-item-cell {
   left: 0;
 }
 #portfolio .folio-item:hover img {
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
+  -webkit-transform: scale(1.0);
+  -ms-transform: scale(1.0);
+  transform: scale(1.0);
 }
 
 /**
@@ -2084,15 +2094,18 @@ button {
  */
 .popup-modal {
   max-width: 550px;
+  max-height: 800px;
   background: #ffffff;
   position: relative;
   margin: 0 auto;
 }
 .popup-modal .media {
   position: relative;
+  left: 25%;
 }
 .popup-modal img {
-  vertical-align: bottom;
+  display: flex;
+  max-height: 400px;
 }
 .popup-modal .description-box {
   padding: 1.8rem 3.6rem 3rem;
@@ -2116,7 +2129,7 @@ button {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   display: block;
-  text-align: left;
+  text-align: center;
   color: rgba(0, 0, 0, 0.5);
 }
 .popup-modal .link-box {
@@ -2340,7 +2353,7 @@ button {
   color: #ffffff;
 }
 .services-list .desc {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(245, 239, 239, 0.902);
 }
 
 /* pagination */

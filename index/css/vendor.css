@@ -406,7 +406,7 @@
 	display: inline-block;
 	vertical-align: middle;
 	margin: 0 auto;
-	text-align: left;
+	text-align: center;
 	z-index: 1045;
 }
 .mfp-inline-holder .mfp-content, .mfp-ajax-holder .mfp-content {
