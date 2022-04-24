@@ -11,18 +11,30 @@ body {
     align-items: center;
     justify-content: center;
     perspective: 1000px;
+    flex-direction: column;
+}
+h3{
+    font-size: 32px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    text-align: center;
 }
 .container {
-    background: lightcoral;
-    width: 70%;
+    border-radius: 30%;
+    background: lightseagreen;
+    background-image: url("../../index/images/tenis.png");
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: left;
+    width: 90%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 .card {
-    background: lightblue;
+    background: rgb(155, 214, 234);
     transform-style: preserve-3d;
-    min-height: 80vh;
+    min-height: 70vh;
     width: 35rem;
     border-radius: 30px;
     padding: 0rem 5rem;
@@ -56,6 +68,7 @@ body {
     transition: all 0.75s ease-out;
 }
 .info h3 {
+    text-align: center;
     font-size: 1.3rem;
     padding: 2rem 0rem;
     color: #585858;
@@ -94,5 +107,14 @@ button.active {
     cursor: pointer;
     border-radius: 30px;
     font-weight: bolder;
+}
+
+@media (max-width: 901px) {
+    body{
+        position: fixed;
+    }
+    .card{
+        min-height: 50vh;
+    }
 
 }

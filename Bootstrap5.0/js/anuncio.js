@@ -19,7 +19,7 @@ container.addEventListener("mouseenter", (e) => {
     card.style.transition = "none";
     //Popout
     title.style.transform = "perspective(1000px) translateZ(150px)";
-    sneaker.style.transform = "perspective(400px) translateZ(200px) rotateZ(45deg)";
+    sneaker.style.transform = "perspective(350px) translateY(20px) translateZ(200px) rotateZ(45deg)";
     description.style.transform = "perspective(1000px) translateZ(125px)";
     sizes.style.transform = "perspective(1000px) translateZ(100px)";
     purchase.style.transform = "translateZ(75px)";
