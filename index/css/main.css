@@ -1567,8 +1567,12 @@ header .logo a {
   }
 }
 @media only screen and (max-width: 600px) {
+ 
   #intro {
-    min-height: 600px;
+    min-height: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
   }
   .intro-content h1 {
     font-size: 4.6rem;
