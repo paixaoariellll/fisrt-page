@@ -19,20 +19,22 @@ h3{
     display: flex;
     text-align: center;
 }
-.container {
-    border-radius: 30%;
-    background: lightseagreen;
-    background-image: url("../../index/images/tenis.png");
-    background-size: contain;
-    background-attachment: fixed;
-    background-position: left;
-    width: 90%;
-    display: flex;
+/* Nesta section estará todos os produtos em seus respectivos cards */
+.section{
     justify-content: space-around;
-    align-items: center;
+    display: flex;
 }
-.card {
-    background: rgb(155, 214, 234);
+/* primeiro produto */
+.container1 {
+    border-radius: 30px;
+    background: rgb(27, 27, 27);
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+.card1 {
+    background: linear-gradient(rgb(207, 145, 84), rgb(254, 249, 249));
     transform-style: preserve-3d;
     min-height: 70vh;
     width: 35rem;
@@ -40,34 +42,34 @@ h3{
     padding: 0rem 5rem;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
-.sneaker {
+.sneaker1 {
     min-height: 35vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.sneaker img {
-    width: 20rem;
-    z-index: 2;
+.sneaker1 img {
+    width: 14rem;
+    z-index: 5;
     transition: all 0.75s ease-out;
 }
-.circle {
+.circle1 {
     width: 15rem;
     height: 15rem;
     background: linear-gradient(
         to right,
-        rgba(245, 70, 66, 0.75),
-        rgba(8, 83, 156, 0.75)
+        rgba(179, 26, 26, 0.75) 50%,
+        rgba(255, 255, 255, 0.75)
         );
-        position: absolute;
-        border-radius: 50%;
+    position: absolute;
+    border-radius: 50%;
     z-index: 1;
 }
-.info h1 {
+.info1 h1 {
     font-size: 3rem;
     transition: all 0.75s ease-out;
 }
-.info h3 {
+.info1 h3 {
     text-align: center;
     font-size: 1.3rem;
     padding: 2rem 0rem;
@@ -75,12 +77,12 @@ h3{
     font-weight: lighter;
     transition: all 0.75s ease-out;
 }
-.sizes {
+.sizes1 {
     display: flex;
     justify-content: space-between;
     transition: all 0.75s ease-out;
 }
-.sizes button {
+.sizes1 button {
     padding: 0.5rem 2rem;
     background: none;
     border: none;
@@ -94,11 +96,97 @@ button.active {
     background: #585858;
     color: white;
 }
-.purchase {
+.purchase1 {
       margin-top: 5rem;
       transition: all 0.75s ease-out;
 }
-.purchase button {
+.purchase1 button {
+    width: 100%;
+    padding: 1rem 0rem;
+    background: #f54642;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+/* segundo produto */
+.container2 {
+    border-radius: 30px;
+    background: rgb(27, 27, 27);
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+.card2 {
+    background: linear-gradient(rgb(194, 51, 51), rgb(254, 249, 249));
+    transform-style: preserve-3d;
+    min-height: 70vh;
+    width: 35rem;
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+.sneaker2 {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sneaker2 img {
+    width: 10rem;
+    z-index: 5;
+    transition: all 0.75s ease-out;
+}
+.circle2 {
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(
+        to right,
+        rgba(230, 181, 101, 0.75) 20%,
+        rgba(255, 255, 254, 0.75)
+        );
+        position: absolute;
+        border-radius: 50%;
+    z-index: 1;
+}
+.info2 h1 {
+    font-size: 3rem;
+    transition: all 0.75s ease-out;
+}
+.info2 h3 {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 2rem 0rem;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+.sizes2 {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+}
+.sizes2 button {
+    padding: 0.5rem 2rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858;
+}
+button.active {
+    background: #585858;
+    color: white;
+}
+.purchase2 {
+      margin-top: 5rem;
+      transition: all 0.75s ease-out;
+}
+.purchase2 button {
     width: 100%;
     padding: 1rem 0rem;
     background: #f54642;
@@ -109,12 +197,34 @@ button.active {
     font-weight: bolder;
 }
 
-@media (max-width: 901px) {
-    body{
-        position: fixed;
+@media (max-width: 1024px) {
+    .container1, .container2{
+        display: flex;
+        width: 90%;
+        justify-content: center;
     }
+    .section{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 901px) {
     .card{
         min-height: 50vh;
     }
-
+}
+@media (max-width: 624px) {
+  .section{
+    width: 80%;
+  }
+  .container1,.container2{
+    width:70%;
+  }
+  .card1,.card2{
+    width: 40rem;
+    padding-right: 3rem;
+  }
+  .sneaker1 img,.sneaker2 img {
+    min-height: 8rem;
+  }
 }

@@ -1591,6 +1591,7 @@ header .logo a {
   }
   .intro-social {
     font-size: 2.4rem;
+    bottom: 0rem;
   }
 }
 
