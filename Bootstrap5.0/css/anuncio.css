@@ -225,6 +225,9 @@ button.active {
     padding-right: 3rem;
   }
   .sneaker1 img,.sneaker2 img {
-    min-height: 8rem;
+    display: flex;
+  }
+  .info1,.info2{
+      text-align: center;
   }
 }

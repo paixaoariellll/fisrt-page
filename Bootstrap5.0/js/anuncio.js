@@ -1,3 +1,4 @@
+//Created by Ariel Paixão
 /* Produto 1 */
 
 //Movement Animation to happen
@@ -22,10 +23,20 @@ container1.addEventListener("mouseenter", (e) => {
     card1.style.transition = "none";
     //Popout
     title1.style.transform = "perspective(900px) translateZ(150px)";
-    sneaker1.style.transform = "perspective(270px) translateY(30px) translateZ(200px) rotateZ(0deg)";
     description1.style.transform = "perspective(900px) translateZ(125px)";
     sizes1.style.transform = "perspective(900px) translateZ(100px)";
     purchase1.style.transform = "translateZ(75px)";
+    // Media Query
+    function myFunction(x) {
+        if (x.matches) { // If media query matches
+            sneaker1.style.transform = "perspective(400px) translateY(20px) translateZ(200px)";
+        } else {
+            sneaker1.style.transform = "perspective(270px) translateY(20px) translateZ(200px)";
+        }
+    }
+    var x = window.matchMedia("(max-width: 624px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state changes
 });
 //Animate Out
 container1.addEventListener("mouseleave", (e) => {
@@ -63,10 +74,20 @@ container2.addEventListener("mouseenter", (e) => {
     card2.style.transition = "none";
     //Popout
     title2.style.transform = "perspective(900px) translateZ(150px)";
-    sneaker2.style.transform = "perspective(270px) translateY(20px) translateZ(200px) rotateZ(0deg)";
     description2.style.transform = "perspective(900px) translateZ(125px)";
     sizes2.style.transform = "perspective(900px) translateZ(100px)";
     purchase2.style.transform = "translateZ(75px)";
+    // Media Query
+    function myFunction(x) {
+        if (x.matches) { // If media query matches
+            sneaker2.style.transform = "perspective(400px) translateY(20px) translateZ(200px)";
+        } else {
+            sneaker2.style.transform = "perspective(270px) translateY(20px) translateZ(200px)";
+        }
+    }
+    var x = window.matchMedia("(max-width: 624px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state changes
 });
 //Animate Out
 container2.addEventListener("mouseleave", (e) => {
