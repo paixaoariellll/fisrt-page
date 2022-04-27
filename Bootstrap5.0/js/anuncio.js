@@ -14,8 +14,8 @@ const sizes1 = document.querySelector(".sizes1");
 
 //Moving Animation Event
 container1.addEventListener("mousemove", (e) => {
-    let xAxis = (window.innerWidth / 2 - e.pageX) / 15;
-    let yAxis = (window.innerHeight / 2 - e.pageY) / 15;
+    let xAxis = (window.innerWidth / 2 - e.pageX) / 45;
+    let yAxis = (window.innerHeight / 2 - e.pageY) / 45;
     card1.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 });
 //Animate In
@@ -29,9 +29,9 @@ container1.addEventListener("mouseenter", (e) => {
     // Media Query
     function myFunction(x) {
         if (x.matches) { // If media query matches
-            sneaker1.style.transform = "perspective(400px) translateY(20px) translateZ(200px)";
+            sneaker1.style.transform = "perspective(400px) translateY(-20px) translateZ(200px)";
         } else {
-            sneaker1.style.transform = "perspective(270px) translateY(20px) translateZ(200px)";
+            sneaker1.style.transform = "perspective(270px) translateY(0px) translateZ(200px)";
         }
     }
     var x = window.matchMedia("(max-width: 624px)")
@@ -82,7 +82,7 @@ container2.addEventListener("mouseenter", (e) => {
         if (x.matches) { // If media query matches
             sneaker2.style.transform = "perspective(400px) translateY(20px) translateZ(200px)";
         } else {
-            sneaker2.style.transform = "perspective(270px) translateY(20px) translateZ(200px)";
+            sneaker2.style.transform = "perspective(270px) translateY(0px) translateZ(200px)";
         }
     }
     var x = window.matchMedia("(max-width: 624px)")
