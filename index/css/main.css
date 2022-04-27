@@ -1636,7 +1636,8 @@ header .logo a {
 .about-content {
   position: relative;
   text-align: left;
-  max-width: 850px;
+  max-width: 825px;
+  padding-left: 10px;
   margin-bottom: 3.6rem;
 }
 
