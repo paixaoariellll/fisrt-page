@@ -1483,10 +1483,10 @@ header .logo a {
 .intro-content .button {
   color: #ffffff !important;
   border-color: rgba(255, 255, 255, 0.3);
-  height: 6rem !important;
-  line-height: 5.4rem !important;
+  height: 5rem !important;
+  line-height: 5rem !important;
   padding: 0 3.5rem 0 3rem !important;
-  margin-top: 0.6rem;
+  margin-top: 0.3rem !important;
   font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 0.25rem;
