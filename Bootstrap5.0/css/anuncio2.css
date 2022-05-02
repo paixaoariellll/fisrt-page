@@ -90,6 +90,13 @@ section::after {
     justify-content: center;
     flex-direction: column;
     transition: 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+.container .card:hover .content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50px);
 }
 .container .card .content .color,
 .container .card .content .size {
@@ -121,4 +128,41 @@ section::after {
     font-weight: 500;
     transition: 0.5s ;
     cursor: pointer;
+}
+.container .card .content .size span:hover{
+    background: #9bdc28;
+}
+.container .card .content .color span{
+    width: 20px;
+    height: 20px;
+    background: #f00;
+    border-radius: 50%;
+    margin: 0 5px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.container .card .content .color span:nth-child(2){
+    background: #9bdc28;
+}
+.container .card .content .color span:nth-child(3){
+    background: #03a9f4;
+}
+.container .card .content .color span:nth-child(4){
+    background: #e91e63;
+}
+.container .card .content a{
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    padding: 12px 30px;
+    background: #fff;
+    border-radius: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #111;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 55%;
+    left: 22.5%;
 }
