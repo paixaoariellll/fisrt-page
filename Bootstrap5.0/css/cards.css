@@ -73,11 +73,12 @@ section {
 
 #imagem{
   width: 100%;
-  background: url(../../index/images/jellyfish-card-6.jpg);
-  background-position: center;
+  background: url(../../index/images/cards-jellyfish-5.jpg);
+  background-position: 50% 40%;
   background-size: cover;
   background-origin: border-box;
   background-attachment: fixed;
+
 }
 .card {
   position: relative;
@@ -88,7 +89,7 @@ section {
   transition: 0.5s;
   backdrop-filter: blur(1.2px);  
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7) ;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(17, 74, 109, 0.326);
   border-radius: 12px;
   z-index: 11;
 }
