@@ -1502,14 +1502,14 @@ header .logo a {
   line-height: 5rem !important;
   padding: 0 3.5rem 0 3rem !important;
   margin-top: 0.3rem !important;
-  font-size: 1.3rem;
+  font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.25rem;
 }
 .intro-content .button:hover,
 .intro-content .button:focus {
   border-color: #141491;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .intro-content .button::after {
   display: inline-block;
