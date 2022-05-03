@@ -2406,7 +2406,7 @@ button {
  * ------------------------------------------------------------------- 
  */
 #stats {
-  background: #990047;
+  background: rgba(151, 10, 147, 0.977);
   padding-top: 7.2rem;
   padding-bottom: 6rem;
   text-align: center;
@@ -2415,7 +2415,7 @@ button {
   max-width: 1440px;
 }
 #stats .stat {
-  border-left: 1px solid rgba(255, 255, 255, 0.12);
+  border-left: 1px solid rgba(255, 255, 255, 0.719);
   min-height: 17.4rem;
 }
 #stats .stat:first-child {
@@ -2430,7 +2430,7 @@ button {
   font-size: 3.6rem;
   margin-top: 1.2rem;
   margin-bottom: 0;
-  font-family: "poppins-medium", sans-serif;
+  font-family: 'Clicker Script', cursive;
   color: white;
 }
 #stats .stat-title {
@@ -2727,10 +2727,10 @@ footer {
 footer a,
 footer a:visited {
   color: #ffffff;
-}
+  }
 footer a:hover,
 footer a:focus {
-  color: #ff0077;
+  color: rgba(151, 10, 147, 0.977);
 }
 footer .row {
   max-width: 900px;
@@ -2746,13 +2746,10 @@ footer .footer-social {
   position: relative;
   top: -0.3rem;
 }
-footer .footer-social li {
-  display: inline-block;
-  margin: 0 12px;
-  padding: 0;
-}
-footer .footer-social li a {
+footer span a {
   color: #ffffff;
+  font-size: 3rem;
+  font-family: 'Clicker Script', cursive;
 }
 footer .copyright span {
   display: inline-block;
@@ -2761,7 +2758,7 @@ footer .copyright span::after {
   content: "|";
   display: inline-block;
   padding: 0 1rem 0 1.2rem;
-  color: rgba(255, 255, 255, 0.1);
+  color: rgb(255, 255, 255);
 }
 footer .copyright span:last-child::after {
   display: none;

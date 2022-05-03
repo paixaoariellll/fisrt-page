@@ -163,6 +163,12 @@ section::after {
     color: #111;
     text-decoration: none;
     text-transform: uppercase;
-    width: 55%;
+    width: 70%;
     left: 22.5%;
+}
+@media (max-width: 1195px ){
+    section {
+        display: flex;
+        flex-flow: column;
+    }
 }
