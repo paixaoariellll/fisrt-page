@@ -6,8 +6,8 @@
  *  02. base style overrides
  *  03. typography & general theme styles
  *  04. preloader
- *  05. forms
- *  06. buttons 
+ *  05. form
+ *  06. button
  *  07. other components
  *  08. common styles
  *  09. header styles
@@ -34,7 +34,8 @@
 @import url("fonts.css");
 @import url("font-awesome/css/font-awesome.min.css");
 @import url("micons/micons.css");
-
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Patrick+Hand&display=swap');
 /** 
  * ===================================================================
  * 02. base style overrides - (_document-setup.scss)
@@ -66,11 +67,11 @@ body {
   height: 100%;
 }
 body {
-  background: #151515;
+  background: #020420;
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   line-height: 3rem;
-  color: #6e6e6e;
+  color: #322f2f;
 }
 
 /**
@@ -176,10 +177,10 @@ p img {
   margin: 0;
 }
 p.lead {
-  font-family: "Poppins", serif;
-  font-size: 3rem;
+  font-family:'Patrick Hand', cursive;
+  font-size: 4rem;
   line-height: 1.8;
-  color: #0000ff;
+  color: rgba(29, 15, 180, 0.977);
 }
 @media only screen and (max-width: 768px) {
   p.lead {
@@ -702,7 +703,7 @@ section video {
 
 /** 
  * ===================================================================
- * 06. buttons - (_button-essentials.scss)
+ * 06. button - (_button-essentials.scss)
  *
  * ------------------------------------------------------------------- 
  */
@@ -755,7 +756,7 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  background: #313131;
+  background: #1a0a53;
   color: #ffffff;
 }
 .button.button-primary:hover,
@@ -790,8 +791,10 @@ button.large,
 }
 button.stroke,
 .button.stroke {
+  font-family: 'Patrick Hand', cursive;
+  color: #020086;
   background: transparent !important;
-  border: 3px solid #313131;
+  border: 3px solid #1a0a53;
   line-height: 4.8rem;
 }
 button.stroke.medium,
@@ -804,8 +807,8 @@ button.stroke.large,
 }
 button.stroke:hover,
 .button.stroke:hover {
-  border: 3px solid #ff0077;
-  color: #ff0077;
+  border: 3px solid rgba(151, 10, 147, 0.977);
+  color: rgba(151, 10, 147, 0.977);
 }
 button::-moz-focus-inner,
 input::-moz-focus-inner {
@@ -1131,10 +1134,14 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- 
  */
 .grey-section {
-  background: #ebebeb;
+  background: #020420;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  color: #c9c0c0;
 }
 .grey-section p.lead {
-  color: #7d7d7d;
+  color: #9f9797;
 }
 .section-intro {
   max-width: 700px;
@@ -1147,13 +1154,14 @@ input::-moz-focus-inner {
 .section-intro h1 {
   font-family: "poppins-semibold", serif;
   font-size: 4rem;
-  color: #fff;
+  color: rgb(218, 211, 211);
   line-height: 1.25;
   margin-bottom: 1.2rem;
 }
 .section-intro h5 {
-  color: #1a0ab1;
-  font-size: 1.6rem;
+  color:rgba(19, 10, 151, 0.977);
+  font-family: 'Patrick Hand', cursive;
+  font-size: 3rem;
   line-height: 1.875;
   margin-bottom: 0.3rem;
   letter-spacing: 0.4rem;
@@ -1434,25 +1442,30 @@ header .logo a {
   transform: translateY(4.9rem);
 }
 .intro-content h1 {
-  color: #ffffff;
+  color: #ebe7e7;
   font-family: "poppins-medium", sans-serif;
   font-size: 8.4rem;
   line-height: 1.071;
   max-width: 900px;
   margin-top: 0;
   margin-bottom: 0.6rem;
+  pointer-events: none;
   margin-left: auto;
   margin-right: auto;
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
+.intro-content h1:hover{
+  font-size: 10rem;
+} 
 .intro-content h5 {
-  color: #cc005f;
+  color: rgba(151, 10, 147, 0.977);
   font-family: "poppins-bold", sans-serif;
   font-size: 3.3rem;
   line-height: 1.565;
   margin-bottom: 0;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
+  pointer-events: none;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 .intro-content .intro-position {
@@ -1461,28 +1474,29 @@ header .logo a {
   line-height: 2.4rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  color: #ffffff;
+  color: #f0ebeb;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 .intro-content .intro-position span {
   display: inline-block;
+  pointer-events: none;
 }
 .intro-content .intro-position span::after {
   content: "|";
   text-align: center;
   display: inline-block;
   padding: 0 8px 0 14px;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(151, 10, 147, 0.977);
 }
 .intro-content .intro-position span:first-child::before {
   content: "|";
   text-align: center;
   display: inline-block;
   padding: 0 14px 0 8px;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(151, 10, 147, 0.977);
 }
 .intro-content .button {
-  color: #ffffff !important;
+  color: rgba(151, 10, 147, 0.977) !important;
   border-color: rgba(255, 255, 255, 0.3);
   height: 5rem !important;
   line-height: 5rem !important;
@@ -1494,7 +1508,8 @@ header .logo a {
 }
 .intro-content .button:hover,
 .intro-content .button:focus {
-  border-color: #cc005f;
+  border-color: #141491;
+  font-size: 2rem;
 }
 .intro-content .button::after {
   display: inline-block;
@@ -1522,13 +1537,9 @@ header .logo a {
   margin: 0 20px;
   padding: 0;
 }
-.intro-social li a,
-.intro-social li a:visited {
-  color: #ffffff;
-}
-.intro-social li a:hover,
-.intro-social li a:focus {
-  color: #cc005f;
+.intro-social li a:hover img{
+  transform: scale(1.2) translateY(10px);
+  transition: 1s;
 }
 
 /**
@@ -1607,9 +1618,9 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #about {
-  background: #c3c3ca;
+  background: #dfdfdf;
   padding-top: 5rem;
-  padding-bottom: 15rem;
+  padding-bottom: 6rem;
 }
 #about .section-intro {
   margin-bottom: 3rem;
@@ -1643,10 +1654,13 @@ header .logo a {
 }
 
 .about-content h3 {
-  font-family: "poppins-bold", sans-serif;
-  font-size: 2.8rem;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 4rem;
   text-transform: uppercase;
   letter-spacing: 0.25rem;
+  color: #020086;
+  text-align: center;
+  transform: translateX(-10%);
 }
 
 .about-content .info-list {
@@ -1657,22 +1671,23 @@ header .logo a {
 .about-content .info-list li {
   padding: 0 0 1.5rem 0;
   margin-bottom: 0.6rem;
+  text-align: left;
 }
 
 .about-content .info-list li strong {
-  font-family: "poppins-bold", sans-serif;
+  font-family: 'Patrick Hand', cursive;
   color: #000000;
   text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  font-size: 3rem;
   line-height: 3rem;
 }
 
 .about-content .info-list li span {
   display: block;
-  font-family: "poppins-regular", sans-serif;
-  color: #160869;
-  font-size: 2rem;
+  font-family: 'Clicker Script', cursive;
+  color: rgb(6, 1, 7);
+  font-size: 4rem;
   line-height: 1;
 }
 
@@ -1773,7 +1788,7 @@ button {
   text-align: center;
   text-transform: uppercase;
   background-color: transparent;
-  border:rgb(30, 182, 202);
+  border:rgb(26, 7, 75);
   transition: color 7s ease;
   transition-property: color, background-color, transform;
   cursor: pointer;
@@ -1807,7 +1822,7 @@ button {
   right: 0;
   bottom: 0;
   z-index: -1;
-  background-color: rgb(4, 175, 218);
+  background-color: rgb(24, 12, 100);
   transition: height 0.3s ease;
  }
 
@@ -1820,9 +1835,6 @@ button {
 
 #resume .resume-header {
   text-align: center;
-}
-#resume .resume-header h2 {
-  color: #ff0077;
 }
 #resume .timeline-header h3 {
   color: #fff;
@@ -2308,6 +2320,7 @@ button {
  */
 #services {
   position: relative;
+  background-position: 50% 40%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -2320,7 +2333,7 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #000;
+  background: rgba(0, 0, 0, 0.787);
   opacity: 0.5;
 }
 
