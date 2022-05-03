@@ -2803,28 +2803,32 @@ footer .copyright span:last-child::after {
 }
 #go-top a {
   text-decoration: none;
-  border: 0 none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid wheat;
   display: block;
+  border-radius: 30px;
   height: 6.6rem;
   width: 6rem;
   line-height: 6.6rem;
   text-align: center;
-  background: #cc005f;
-  color: #ffffff;
+  background: rgba(151, 10, 147, 0.977);
+  color: #0e0bed;
   text-align: center;
   text-transform: uppercase;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.9s ease-in-out;
+  -o-transition: all 0.9s ease-in-out;
+  -webkit-transition: all 0.9s ease-in-out;
+  -ms-transition: all 0.9s ease-in-out;
+  transition: all 0.9s ease-in-out;
 }
 #go-top a i {
   font-size: 1.6rem;
   line-height: inherit;
 }
 #go-top a:hover {
-  background: #000000;
+  background: rgba(171, 177, 12, 0.977);
+  border-radius: 30px;
 }
 
 /* Scroll bar side*/
@@ -2832,10 +2836,10 @@ footer .copyright span:last-child::after {
   width: 20px;
 }
 ::-webkit-scrollbar-track{
-  background: #151515;
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb{
-  background: #cc005f;
+  background: rgba(151, 10, 147, 0.977);
   border-radius: 30px;
 }
 
