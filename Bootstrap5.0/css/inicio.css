@@ -79,7 +79,7 @@ header h2, header h4{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .showcase video {
   position: absolute;
@@ -88,9 +88,17 @@ header h2, header h4{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.8;
+  opacity: 1;
 }
-
+.showcase .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #082a6cb9;
+  opacity: 0.6;
+}
 .text {
   position: relative;
   display: block;
@@ -101,16 +109,17 @@ header h2, header h4{
 }
 
 .text h3 {
-  font-size: 4em;
-  font-weight: 700;
-  color: #fff;
+  font-size: 3.8em;
+  font-family: 'Patrick Hand', cursive;
+  color: rgb(235, 224, 224)! important;
   line-height: 1em;
   text-transform: uppercase;
   pointer-events: none;
 }
 .text p {
-  font-size: 1.1em;
-  color: #fff;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1.3em;
+  color: rgb(244, 237, 237);
   margin: 20px 0;
   font-weight: 400;
   max-width: 700px;
@@ -258,6 +267,15 @@ header h2, header h4{
   .showcase video{
     display: none;
   }
+  .showcase .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0c0c0cb9;
+    opacity: 0.6;
+  }
   .showcase .background {
     display: flex;
   }
@@ -311,8 +329,8 @@ header h2, header h4{
     padding: 40px;
   }
   .text h3{
-    font-size: 2em;
-    transform: translateY(-190px) translateX(-25px);
+    font-size: 3.2em;
+    transform: translateY(140px) translateX(-22px);
     transition: 10s;
   }
   .text p {
@@ -324,6 +342,13 @@ header h2, header h4{
   }
   .text .social{
     transform: translateY(-200px);
+  }
+}
+@media (max-width: 510px) {
+  .text h3{
+    font-size: 2.1em;
+    transform: translateY(130px) translateX(-25px);
+    transition: 10s;
   }
 }
 @media (max-width: 400px) {
@@ -362,7 +387,7 @@ header h2, header h4{
     display: flex;
   }
   .showcase h3{
-    color: green !important;
+    color: rgb(216, 223, 216) !important;
   }
   .showcase,
   .showcase header {
@@ -370,7 +395,7 @@ header h2, header h4{
   }
   .text h3{
     font-size: 2em;
-    transform: translateY(-190px) translateX(-25px);
+    transform: translateY(-80px) translateX(-25px);
     transition: 10s;
   }
   .text p {
