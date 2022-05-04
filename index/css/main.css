@@ -1691,7 +1691,7 @@ header .logo a {
 }
 .about-content .info-list li span {
   display: block;
-  font-family: 'poppins', cursive;
+  font-family: 'poppins', sans-serif;
   color: rgb(78, 74, 79);
   font-size: 2rem;
   line-height: 1;

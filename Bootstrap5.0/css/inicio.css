@@ -5,6 +5,8 @@
  * ------------------------------------------------------------------- 
 */
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Patrick+Hand&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -109,12 +111,17 @@ header h2, header h4{
 }
 
 .text h3 {
+  display: flex;
   font-size: 3.8em;
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'poppins', sans-serif;
   color: rgb(235, 224, 224)! important;
+  align-items: center;
   line-height: 1em;
   text-transform: uppercase;
   pointer-events: none;
+  justify-content: center;
+  left: 0;
+  top: 50%;
 }
 .text p {
   font-family: 'Patrick Hand', cursive;
