@@ -32,38 +32,18 @@ header h2, header h4{
   text-align: center;
   color:#fff;
 }
-.toggle {
-  position: relative;
-  width: 60px;
-  height: 60px;
-  background: url(https://i.ibb.co/HrfVRcx/menu.png);
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: center;
-  cursor: pointer;
-}
-.toggle.active {
-  background: url(https://i.ibb.co/rt3HybH/close.png);
-  background-repeat: no-repeat;
-  background-size: 25px;
-  background-position: center;
-  cursor: pointer;
-}
 
 .showcase {
   position: absolute;
-  right: 0;
   width: 100%;
   min-height: 100vh;
   padding: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #111;
   transition: 1.5s;
   z-index: 2;
   background-attachment: fixed;
-  background-position: center;
 }
 .showcase.active {
   right: 300px;
@@ -75,7 +55,7 @@ header h2, header h4{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: contain;
-  background-position: 90% 50%;
+  background-position: 50% 50%;
   top: 0;
   left: 0;
   width: 100%;
@@ -102,12 +82,20 @@ header h2, header h4{
   opacity: 0.6;
 }
 .text {
+  width: 100%;
   position: relative;
-  display: block;
-  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  border: 3px solid rgba(255,255,255,0.2);
+  border-radius: 30px;
+  padding: 20px;
+  left: 60%;
   z-index: 10;
-  left: 180%;
-  top: -100px;
+  background-color: rgba(13, 56, 77, 0.337);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
 }
 
 .text h3 {
@@ -131,23 +119,27 @@ header h2, header h4{
   font-weight: 400;
   max-width: 700px;
   pointer-events: none;
-}
+  }
 .text a {
-  text-align: center;
-  display: inline-block;
-  font-size: 1em;
-  background: rgb(250, 250, 250);
-  padding: 10px 30px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 500;
-  margin-top: 10px;
-  color: #111;
-  letter-spacing: 2px;
-  transition: 0.2s;
+  background: #fff;
+  display: flex;
+  width: 140px;
+  height: 40px;
+  border-radius: 30px;
+  align-items: center;
+  position: relative;
+  justify-items: center;
+  justify-content: center;
+  font-family: 'poppins', sans-serif;
+  color: rgb(17, 15, 15);
+  left: 35%;
+  border: 3px solid rgba(255,255,255,0.2);
+  transition: 2s;
 }
 .text a:hover {
+  background: #03a9f4;
   letter-spacing: 6px;
+  transform: scale(1.2);
 }
 
 .social {
@@ -176,92 +168,117 @@ header h2, header h4{
   transform: scale(0.5) translateY(-15px);
 } 
 
-.menu {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 300px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-attachment: fixed;
-}
-.menu ul {
-  position: relative;
-}
-.menu ul li {
-  list-style: none;
-}
-.menu ul li a {
-  text-decoration: none;
-  font-size: 24px;
-  color: #111;
-}
-.menu ul li a:hover {
-  color: #03a9f4;
-}
-
 @media (max-width: 1550px) {
   .text {
+    width: 100%;
     position: relative;
-    display: block;
-    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    border: 3px solid rgba(255,255,255,0.2);
+    border-radius: 30px;
+    padding: 20px;
+    left: 60%;
     z-index: 10;
-    left: 150%;
-    top: -100px;
-    transition: 2s;
+    background-color: rgba(13, 56, 77, 0.337);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
   }
 }
 @media (max-width: 1380px) {
   .text {
+    width: 100%;
     position: relative;
-    display: block;
-    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    border: 3px solid rgba(255,255,255,0.2);
+    border-radius: 30px;
+    padding: 20px;
+    left: 60%;
     z-index: 10;
-    left: 130%;
-    top: -100px;
-    transition: 2s;
+    background-color: rgba(13, 56, 77, 0.337);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
   }
 }
 
 @media (max-width: 1280px) {
   .text {
+    transition:  2s;
+    width: 100%;
     position: relative;
-    display: block;
-    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    border: 3px solid rgba(255,255,255,0.2);
+    border-radius: 30px;
+    padding: 20px;
+    left: 50%;
     z-index: 10;
-    left: 110%;
-    top: -100px;
-    transition: 2s;
+    background-color: rgba(13, 56, 77, 0.337);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
   }
 }
 @media (max-width: 1170px) {
   .text {
+    transition:  2s;
+    width: 100%;
     position: relative;
-    display: block;
-    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    padding: 20px;
+    left: 45%;
     z-index: 10;
-    left: 90%;
-    top: -100px;
-    transition: 2s;
+    background-color: rgba(13, 56, 77, 0.337);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
   }
 }
 @media (max-width: 1070px) {
   .text {
+    transition:  2s;
+    width: 100%;
     position: relative;
-    display: block;
-    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    border: 3px solid rgba(255,255,255,0.2);
+    border-radius: 30px;
+    padding: 20px;
+    left: 40%;
     z-index: 10;
-    left: 70%;
-    top: -100px;
-    transition: 2s;
+    background-color: rgba(13, 83, 117, 0.337);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
   }
 }
 @media (max-width: 991px) {
-  .text-end{
-    text-align: center !important;
+  .text {
+    transition:  2s;
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    border: 3px solid rgba(255,255,255,0.2);
+    border-radius: 30px;
+    padding: 20px;
     left: 30%;
+    z-index: 10;
+    background-color: rgba(14, 15, 15, 0.39);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
   }
   .social{
     width: 40%;
@@ -297,25 +314,24 @@ header h2, header h4{
     font-size: 3em;
   }
 }
-@media (max-width: 700px) {
-  .text-end{
+@media (max-width: 720px) {
+  .text{
     text-align: center !important;
     left: 10%;
   }
 }
-@media (max-width: 622px) {
-  .text-end{
-    text-align: initial !important;
-    left: 10%;
+@media (max-width: 625px) {
+  .text{
+    left: 0;
+  }
+  .texto{
+    display: none;
   }
   .social{
     display: flex;
     left: 30%;
     flex-direction: column;
     padding: 10px;
-  }
-  .toggle.active{
-    transform: translate( 30px, -20px);
   }
   header h2{
     display:none;
@@ -335,85 +351,36 @@ header h2, header h4{
   .showcase header {
     padding: 40px;
   }
-  .text h3{
-    font-size: 3.2em;
-    transform: translateY(140px) translateX(-22px);
-    transition: 10s;
-  }
-  .text p {
-    display: none;
-  }
-  .text a {
-    transition: 5s;
-    transform:translateX(50px) translateY(150px);
-  }
-  .text .social{
-    transform: translateY(-200px);
-  }
+
 }
 @media (max-width: 510px) {
-  .text h3{
-    font-size: 2.1em;
-    transform: translateY(130px) translateX(-25px);
-    transition: 10s;
+  .text a{
+    left:25%;
   }
 }
-@media (max-width: 400px) {
-  .text-end{
-    text-align: initial !important;
-    left: 10%;
-  }
-  .social{
-    display: flex;
-    left: 30%;
-    flex-direction: column;
-    padding: 10px;
-  }
-  .toggle.active{
-    transform: translate( 30px, -20px);
-  }
-  header h2{
-    display:none;
+@media (max-width: 441px) {
+  .text {
+    width: 20rem;
   } 
-  header h4{
-    text-align: center;
-    color:#fff;
-    font-size: 1em;
+  .text h3 {
+    font-weight: 100;
+    font-size: 3rem;
   }
-  header .big{
-    display: none;
-  }
-  header .small{
-    display: flex;
-    text-align: center;
-  }
-  .showcase video{
-    display: none;
-  }
-  .showcase .background {
-    display: flex;
-  }
-  .showcase h3{
-    color: rgb(216, 223, 216) !important;
-  }
-  .showcase,
-  .showcase header {
-    padding: 40px;
-  }
-  .text h3{
-    font-size: 2em;
-    transform: translateY(-80px) translateX(-25px);
-    transition: 10s;
-  }
-  .text p {
-    display: none;
-  }
-  .text a {
-    transition: 5s;
-    transform:translateX(30px) translateY(250px);
-    
-  }
-  .text .social{
-    transform: translateY(-200px) ;
+  .text a{
+    left: 14%;
   }
 }
+@media (max-width: 315px) {
+  .text {
+    width: 15rem;
+  } 
+  .text h3 {
+    font-weight: 100;
+    font-size: 2rem;
+  }
+  .text a{
+    left: 4%;
+  }
+}
+
+
