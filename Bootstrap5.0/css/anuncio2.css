@@ -118,7 +118,7 @@ section::before {
     color: rgb(255, 255, 255);
     width: 26px;
     height: 26px;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
     text-align: center;
     display: inline-block;
     color: black;
@@ -131,6 +131,18 @@ section::before {
 }
 .container .card .content .size span:hover{
     background: #9bdc28;
+}
+.container .card .content .size span:hover:nth-child(2){
+    background: #03a9f4;
+}
+.container .card .content .size span:hover:nth-child(3){
+    background:  #e91e63;
+}
+.container .card .content .size span:hover:nth-child(4){
+    background:  #9bdc28;
+}
+.container .card .content .size span:hover:nth-child(5){
+    background:  #e91e63;
 }
 .container .card .content .color span{
     width: 20px;
