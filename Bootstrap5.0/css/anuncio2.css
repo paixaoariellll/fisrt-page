@@ -90,6 +90,7 @@ section::before {
     justify-content: center;
     flex-direction: column;
     transition: 0.5s ease-in-out;
+    align-items: center;
     opacity: 0;
     visibility: hidden;
 }
@@ -175,8 +176,6 @@ section::before {
     color: #111;
     text-decoration: none;
     text-transform: uppercase;
-    width: 70%;
-    left: 22.5%;
 }
 footer{
     text-align: center;
