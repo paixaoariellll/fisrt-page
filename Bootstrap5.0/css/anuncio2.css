@@ -55,29 +55,58 @@ section::before {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(122, 118, 118, 0.096);
     box-shadow:  0 10px 25px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(15px);
+    border-radius: 30px;
+    overflow: hidden;
 }
 .container .card .imgBx {
     position: relative;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 20px;
     transition: 0.5s ease-in-out;
 }
 .container .card:hover .imgBx {
-    transform: translateY(-100px);
+    transform: translateY(-50px);
+}
+.container .card .galery {
+    display: flex;
+    width: 300%;
+    height: 600px;
+    margin: 20px 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+@keyframes animacao {
+    0% {margin-left: 230%; }
+    20% {margin-left: 230%; }
+    25% {margin-left: 0%; }
+    50% {margin-left: 0%; }
+    55% {margin-left: -230%; }
+    60% {margin-left: -230%; }
+    80% {margin-left: 0; }
+    85% {margin-left: 0; }
+    100% {margin-left: 230%; }
+    
 }
 .container .card .imgBx img {
+    padding: 10px;
+    border-radius: 40%;
     max-width: 100%;
     margin: 0 0 20px;
     transition: 0.5s ease-in-out;
+    transform: scale(0.6);
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
 }
 .container .card:hover .imgBx img {
-    transform: translate(-20px, -40px) rotate(-25deg) scale(1.5);
+    transform: translateX(-20px) rotate(-25deg) scale(1.2);
 }
 .container .card .imgBx h2 {
     color: #fff;
@@ -97,16 +126,14 @@ section::before {
 .container .card:hover .content {
     opacity: 1;
     visibility: visible;
-    transform: translateY(-50px);
+    transform: translateY(-40px);
 }
-.container .card .content .color,
 .container .card .content .size {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 8px 20px;
 }
-.container .card .content .color h3,
 .container .card .content .size h3 {
     color: #fff;
     font-weight: 300;
@@ -143,7 +170,7 @@ section::before {
     background:  #9bdc28;
 }
 .container .card .content .size span:hover:nth-child(5){
-    background:  #e91e63;
+    background:  #921d1d;
 }
 .container .card .content .color span{
     width: 20px;
@@ -181,6 +208,7 @@ footer{
     text-align: center;
     position: absolute;
     width: 100%;
+    height: 50px;
 }
 @media (max-width: 1195px ){
     section {
