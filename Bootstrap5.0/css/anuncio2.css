@@ -239,3 +239,8 @@ footer a:hover{
         flex-flow: column;
     }
 }
+@media (max-width: 495px ){
+    footer a{
+        left: 25%; 
+    }
+}
