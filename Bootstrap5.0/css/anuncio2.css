@@ -204,6 +204,12 @@ section::before {
     text-decoration: none;
     text-transform: uppercase;
 }
+.container .card .content a:hover{
+    background: linear-gradient(to right, rgba(50, 128, 50, 0.712), rgba(156, 50, 50, 0.699), rgb(25, 32, 134));
+    color: rgba(255, 255, 255, 0.938);
+    letter-spacing: 3px;
+    transform: scale(1.1);
+}
 footer{
     text-align: center;
     position: absolute;
