@@ -210,6 +210,29 @@ footer{
     width: 100%;
     height: 50px;
 }
+footer a{
+    background: #fff;
+    color: black;
+    display: flex;
+    width: 140px;
+    height: 40px;
+    border-radius: 30px;
+    align-items: center;
+    position: relative;
+    justify-items: center;
+    justify-content: center;
+    font-family: 'poppins', sans-serif;
+    color: rgb(17, 15, 15);
+    border: 3px solid rgba(255,255,255,0.2);
+    transition: 2s;
+    left: 45%;
+}
+footer a:hover{
+    background: #03a9f4;
+    color: #f00;
+    letter-spacing: 6px;
+    transform: scale(1.2);
+}
 @media (max-width: 1195px ){
     section {
         display: flex;
