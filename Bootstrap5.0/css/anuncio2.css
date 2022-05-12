@@ -82,7 +82,8 @@ section::before {
     justify-content: center;
     flex-direction: row;
 }
-@keyframes animacao {
+/* ANIMAÇÃO DO CARD DA DIREITA */
+@keyframes animacao-direita {
     0% {margin-left: 230%; }
     20% {margin-left: 230%; }
     25% {margin-left: 0%; }
@@ -92,20 +93,70 @@ section::before {
     80% {margin-left: 0; }
     85% {margin-left: 0; }
     100% {margin-left: 230%; }
-    
 }
-.container .card .imgBx img {
+.container .card .imgBx .card-direita {
     padding: 10px;
     border-radius: 40%;
     max-width: 100%;
     margin: 0 0 20px;
     transition: 0.5s ease-in-out;
     transform: scale(0.6);
-    animation-name: animacao;
+    animation-name: animacao-direita;
     animation-duration: 20s;
     animation-iteration-count: infinite;
     cursor: grab;
 }
+
+/* ANIMAÇÃO DO CARD CENTRAL */
+@keyframes animacao-top {
+    0% {margin-left: 230%; }
+    20% {margin-left: 0%; }
+    25% {margin-left: 0%; }
+    50% {margin-left: -230%; }
+    55% {margin-left: -230%; }
+    60% {margin-left: 230%; }
+    80% {margin-left: 230%; }
+    85% {margin-left: 0%; }
+    100% {margin-left: -230%; }
+}
+.container .card .imgBx .card-central {
+    padding: 10px;
+    border-radius: 40%;
+    max-width: 100%;
+    margin: 0 0 20px;
+    transition: 0.5s ease-in-out;
+    transform: scale(0.6);
+    animation-name: animacao-top;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    cursor: grab;
+}
+
+/* ANIMAÇÃO DO CARD DA ESQUERDA */
+@keyframes animacao-esquerda {
+    0% {margin-right: 230%; }
+    20% {margin-right: 230%; }
+    25% {margin-right: 0%; }
+    50% {margin-right: 0%; }
+    55% {margin-right: -230%; }
+    60% {margin-right: -230%; }
+    80% {margin-right: 0; }
+    85% {margin-right: 0; }
+    100% {margin-right: 230%; }
+}
+.container .card .imgBx .card-esquerda {
+    padding: 10px;
+    border-radius: 40%;
+    max-width: 100%;
+    margin: 0 0 20px;
+    transition: 0.5s ease-in-out;
+    transform: scale(0.6);
+    animation-name: animacao-esquerda;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    cursor: grab;
+}
+
 .container .card:hover .imgBx img {
     transform: translateX(-20px) rotate(-25deg) scale(1.2);
 }
@@ -225,6 +276,7 @@ footer a{
     width: 140px;
     height: 40px;
     border-radius: 30px;
+    text-decoration: none;
     align-items: center;
     position: relative;
     justify-items: center;
