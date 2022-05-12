@@ -1412,6 +1412,7 @@ header .logo a {
  *
  * ------------------------------------------------------------------- 
  */
+
 #intro {
   background:  url(../images/intro-bg.jpg) no-repeat center left;
   -webkit-background-size: cover;
@@ -1441,10 +1442,25 @@ header .logo a {
   text-align: center;
   transform: translateY(4.9rem);
 }
+@keyframes shine {
+  from {
+  background-position: center 0;
+  }
+  to {
+    background-position: center 100%;
+  }
+}
 .intro-content h1 {
   color: #ebe7e7;
   font-family: "poppins-medium", sans-serif;
   font-size: 8.4rem;
+  background: url("../images/pexels-sasha-martynov-1260727.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 30s linear infinite;
   line-height: 1.071;
   max-width: 900px;
   margin-top: 0;
