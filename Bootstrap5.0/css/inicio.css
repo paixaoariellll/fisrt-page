@@ -93,11 +93,12 @@ header h2, header h4{
   border: 3px solid rgba(255,255,255,0.2);
   border-radius: 30px;
   padding: 20px;
-  left: 60%;
+  left: 130%;
   z-index: 10;
-  background-color: rgba(13, 56, 77, 0.337);
+  background-color: rgba(3, 1, 1, 0.262);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(0px);
+  transition: 1s ease-in-out;
 }
 
 .text h3 {
@@ -183,11 +184,12 @@ header h2, header h4{
     border: 3px solid rgba(255,255,255,0.2);
     border-radius: 30px;
     padding: 20px;
-    left: 60%;
+    left: 120%;
     z-index: 10;
-    background-color: rgba(13, 56, 77, 0.337);
+    background-color: rgba(3, 1, 1, 0.262);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(0px);
+    transition: 1s ease-in-out;
   }
 }
 @media (max-width: 1380px) {
@@ -198,14 +200,14 @@ header h2, header h4{
     justify-content: center;
     text-align: center;
     display: flex;
-    border: 3px solid rgba(255,255,255,0.2);
+    border: 3px solid rgba(255, 255, 255, 0.205);
     border-radius: 30px;
     padding: 20px;
-    left: 60%;
+    left: 100%;
     z-index: 10;
-    background-color: rgba(13, 56, 77, 0.337);
+    background: linear-gradient(to right, rgba(18, 61, 147, 0.233) 5%, rgba(0, 0, 0, 0.324));
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(0px);
   }
 }
 
@@ -223,9 +225,9 @@ header h2, header h4{
     padding: 20px;
     left: 50%;
     z-index: 10;
-    background-color: rgba(13, 56, 77, 0.337);
+    background: linear-gradient(to right, rgba(18, 61, 147, 0.233) 60%, rgba(0, 0, 0, 0.324));
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(0px);
   }
 }
 @media (max-width: 1170px) {
