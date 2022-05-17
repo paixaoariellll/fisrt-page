@@ -65,6 +65,14 @@ header h2, header h4{
   object-fit: cover;
   opacity: 0.9;
 }
+.showcase header img {
+  top: 22vh;
+  left: 21vh;
+  max-width: 90px;
+  display: flex;
+  position: absolute;
+  transition: 1s ease-in-out;
+}
 .showcase video {
   position: absolute;
   top: 0;
@@ -193,6 +201,11 @@ header h2, header h4{
   }
 }
 @media (max-width: 1380px) {
+  .showcase header img {
+    top: 24vh;
+    left: 8vh;
+    max-width: 80px;
+  }
   .text {
     width: 100%;
     position: relative;
@@ -212,6 +225,11 @@ header h2, header h4{
 }
 
 @media (max-width: 1280px) {
+  .showcase header img {
+    top: 25vh;
+    left: 2vh;
+    max-width: 80px;
+  }
   .text {
     transition:  2s;
     width: 100%;
@@ -231,6 +249,11 @@ header h2, header h4{
   }
 }
 @media (max-width: 1170px) {
+  .showcase header img {
+    top: 25vh;
+    left: 60vh;
+    max-width: 80px;
+  }
   .text {
     transition:  2s;
     width: 100%;
@@ -250,6 +273,11 @@ header h2, header h4{
   }
 }
 @media (max-width: 1070px) {
+  .showcase header img {
+    top: 25vh;
+    left: 50vh;
+    max-width: 80px;
+  }
   .text {
     transition:  2s;
     width: 100%;
@@ -321,12 +349,22 @@ header h2, header h4{
   }
 }
 @media (max-width: 720px) {
+  .showcase header img {
+    top: 10vh;
+    left: 35vh;
+    max-width: 80px;
+  }
   .text{
     text-align: center !important;
     left: 10%;
   }
 }
 @media (max-width: 625px) {
+  .showcase header img {
+    top: 15vh;
+    left: 30vh;
+    max-width:70px;
+  }
   .text{
     left: 0;
   }
@@ -360,11 +398,21 @@ header h2, header h4{
 
 }
 @media (max-width: 510px) {
+  .showcase header img {
+    top: 15vh;
+    left: 25vh;
+    max-width:70px;
+  }
   .text a{
     left:25%;
   }
 }
 @media (max-width: 441px) {
+  .showcase header img {
+    top: 15vh;
+    left: 20vh;
+    max-width:70px;
+  }
   .text {
     width: 20rem;
   } 
@@ -377,6 +425,11 @@ header h2, header h4{
   }
 }
 @media (max-width: 315px) {
+  .showcase header img {
+    top: 15vh;
+    left: 10vh;
+    max-width:70px;
+  }
   .text {
     width: 15rem;
   } 
