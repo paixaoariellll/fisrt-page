@@ -73,6 +73,9 @@ header h2, header h4{
   position: absolute;
   transition: 1s ease-in-out;
 }
+.showcase header .white{
+  display: none;
+} 
 .showcase video {
   position: absolute;
   top: 0;
@@ -297,6 +300,9 @@ header h2, header h4{
   }
 }
 @media (max-width: 991px) {
+  .showcase header .white{
+    display: flex;
+  } 
   .text {
     transition:  2s;
     width: 100%;
