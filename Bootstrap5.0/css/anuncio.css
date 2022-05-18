@@ -236,7 +236,7 @@ button.active {
     position: absolute;
     justify-content: center;
     align-items: center;
-    top: 10vh;
+    top: 25vh;
     left: 10vh;
   }
   .brand .brand-black{
