@@ -22,6 +22,7 @@
  *  17. stats
  *  18. contact
  *  19. footer
+ *  20. brand
  *
  *         - - - - - - A ORGANIZAÇÃO É FUNDAMENTAL - - - - - - -  
  * =================================================================== 
@@ -2866,5 +2867,47 @@ footer .copyright span:last-child::after {
   border-radius: 30px;
 }
 
+/** 
+ * ===================================================================
+ * 20. brand - 
+ *  
+ * ------------------------------------------------------------------- 
+ */
+.brand{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 10vh;
+  left: 10vh;
+}
+.brand .brand-black{
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  background-image: url("../images/Logo-4-png.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: alpha(opacity=50);
+  filter: progid:DxImageTransform.Microsoft.Alpha(opacity=0.5);
+  opacity: 0.5;
+  max-width: 100px;
+}
+.brand .brand-white{
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  background-image: url("../images/Logo-4-Branco-png.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: alpha(opacity=50);
+  filter: progid:DxImageTransform.Microsoft.Alpha(opacity=0.5);
+  opacity: 0.5;
+  max-width: 100px;
+}
 
 
