@@ -238,8 +238,8 @@ button.active {
     align-items: center;
     top: 20vh;
     left: 10vh;
-  }
-  .brand .brand-black{
+}
+.brand .brand-black{
     display: flex;
     position: absolute;
     z-index: 1;
@@ -252,8 +252,8 @@ button.active {
     filter: progid:DxImageTransform.Microsoft.Alpha(opacity=0.5);
     opacity: 0.5;
     max-width: 100px;
-  }
-  .brand .brand-white{
+}
+.brand .brand-white{
     display: flex;
     position: absolute;
     z-index: 1;
@@ -266,4 +266,4 @@ button.active {
     filter: progid:DxImageTransform.Microsoft.Alpha(opacity=0.5);
     opacity: 0.5;
     max-width: 100px;
-  }
+}
